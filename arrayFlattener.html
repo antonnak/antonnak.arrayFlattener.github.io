@@ -1,0 +1,14 @@
+<script>
+function arrayFlattener(x) {
+  let z = [];
+    for (let i = 0; i < x.length; i++) {
+    if (x[i].length >= 2) {
+        for (let y = 0; y < x[i].length; y++) {
+        z.push(x[i][y]);
+    };} else {
+        z.push(x[i]);
+      };
+    }
+    return z;
+  }
+</script>
